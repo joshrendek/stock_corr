@@ -7,7 +7,7 @@ development:
   adapter: postgresql
   encoding: unicode
   database: stock_corr_development
-  username: stock_corr
+  username: joshrendek
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -32,7 +32,7 @@ test:
   adapter: postgresql
   encoding: unicode
   database: stock_corr_test
-  username: stock_corr
+  username: joshrendek
   password:
 
 production:

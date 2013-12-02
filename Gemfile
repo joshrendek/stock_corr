@@ -28,6 +28,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 gem 'stock_quote'
+gem 'activerecord-postgres-hstore'
+
 
 group :assets do
   gem 'therubyrhino'
