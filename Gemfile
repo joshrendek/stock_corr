@@ -30,6 +30,11 @@ gem 'jbuilder', '~> 1.2'
 gem 'stock_quote'
 gem 'activerecord-postgres-hstore'
 
+group :development, :test do
+  gem 'rspec', '~> 3.0.0.beta'
+  gem 'rspec-rails', '~> 3.0.0.beta'
+  gem 'pry'
+end
 
 group :assets do
   gem 'therubyrhino'
@@ -38,7 +43,6 @@ group :assets do
 end
 
 group :test do
-  gem 'rspec'
   gem 'database_cleaner'
 end
 
