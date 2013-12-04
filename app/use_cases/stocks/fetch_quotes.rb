@@ -4,6 +4,7 @@ module Stocks
     attr_accessor :symbol, :stock
     def initialize(symbol)
       self.symbol = symbol
+      latest
     end
 
     def latest
@@ -17,7 +18,12 @@ module Stocks
     end
 
     def save
-
+      h = to_hash
+      stock_model = Stock.new(symbol: symbol, open: h['open'],
+                             high: h['high'], low: h['low'],
+                             close: h['close'], volume: h['volume'],
+                             stock_data: h)
+      stock_model.save
     end
   end
 end
