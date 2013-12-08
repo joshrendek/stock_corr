@@ -24,7 +24,6 @@ describe Stocks::FetchQuotes do
       model = double("stock")
       model.stub(:save)
       allow(Stock).to receive(:new).and_return(model)
-      # expect(model).to have_received(:save)
       s = subject.new('GOOG')
       s.save
     end

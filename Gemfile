@@ -28,7 +28,6 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 gem 'stock_quote'
-gem 'activerecord-postgres-hstore'
 
 group :development, :test do
   gem 'rspec', '~> 3.0.0.beta'
@@ -38,9 +37,10 @@ end
 
 group :assets do
   gem 'therubyrhino'
-  gem 'less-rails' #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
-  gem 'twitter-bootstrap-rails'
 end
+
+gem 'less-rails' #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem 'twitter-bootstrap-rails'
 
 group :test do
   gem 'database_cleaner'

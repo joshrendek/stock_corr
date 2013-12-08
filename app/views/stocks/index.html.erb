@@ -9,7 +9,6 @@
       <th>Low</th>
       <th>Close</th>
       <th>Volume</th>
-      <th>Stock data</th>
       <th></th>
       <th></th>
       <th></th>
@@ -25,7 +24,6 @@
         <td><%= stock.low %></td>
         <td><%= stock.close %></td>
         <td><%= stock.volume %></td>
-        <td><%= stock.stock_data %></td>
         <td><%= link_to 'Show', stock %></td>
         <td><%= link_to 'Edit', edit_stock_path(stock) %></td>
         <td><%= link_to 'Destroy', stock, method: :delete, data: { confirm: 'Are you sure?' } %></td>
