@@ -32,8 +32,8 @@ gem 'kaminari'
 gem 'haml'
 gem 'haml-rails'
 gem 'sucker_punch', '~> 1.0'
-gem 'torquebox'
-gem 'torquebox-server'
+# gem 'torquebox'
+# gem 'torquebox-server'
 
 group :development, :test do
   gem 'rspec', '~> 3.0.0.beta'
