@@ -11,11 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131202011556) do
+ActiveRecord::Schema.define(version: 20131214144200) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
   enable_extension "hstore"
+
+  create_table "stock_histories", force: true do |t|
+    t.integer  "stock_id"
+    t.hstore   "stock_data"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "stocks", force: true do |t|
     t.string   "symbol"
@@ -27,6 +34,9 @@ ActiveRecord::Schema.define(version: 20131202011556) do
     t.hstore   "stock_data"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "name"
+    t.string   "category"
+    t.string   "financial_status"
   end
 
 end

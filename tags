@@ -1,0 +1,30 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AddColumnsToStock	db/migrate/20131208232703_add_columns_to_stock.rb	/^class AddColumnsToStock < ActiveRecord::Migration$/;"	c
+Application	config/application.rb	/^  class Application < Rails::Application$/;"	c	class:StockCorr
+ApplicationController	app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+ApplicationHelper	app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+CreateStocks	db/migrate/20131202011556_create_stocks.rb	/^class CreateStocks < ActiveRecord::Migration$/;"	c
+FetchQuotes	app/use_cases/stocks/fetch_quotes.rb	/^  class FetchQuotes$/;"	c	class:Stocks
+SetupHstore	db/migrate/20131202011259_setup_hstore.rb	/^class SetupHstore < ActiveRecord::Migration$/;"	c
+Stock	app/models/stock.rb	/^class Stock < ActiveRecord::Base$/;"	c
+Stock	spec/use_cases/stocks/fetch_quotes_spec.rb	/^class Stock$/;"	c
+StockCorr	config/application.rb	/^module StockCorr$/;"	m
+Stocks	app/use_cases/stocks/fetch_quotes.rb	/^module Stocks$/;"	m
+StocksController	app/controllers/stocks_controller.rb	/^class StocksController < ApplicationController$/;"	c
+StocksHelper	app/helpers/stocks_helper.rb	/^module StocksHelper$/;"	m
+change	db/migrate/20131202011556_create_stocks.rb	/^  def change$/;"	f	class:CreateStocks
+change	db/migrate/20131208232703_add_columns_to_stock.rb	/^  def change$/;"	f	class:AddColumnsToStock
+down	db/migrate/20131202011259_setup_hstore.rb	/^  def self.down$/;"	F	class:SetupHstore
+index	app/controllers/stocks_controller.rb	/^  def index$/;"	f	class:StocksController
+initialize	app/use_cases/stocks/fetch_quotes.rb	/^    def initialize(symbol)$/;"	f	class:Stocks.FetchQuotes
+latest	app/use_cases/stocks/fetch_quotes.rb	/^    def latest$/;"	f	class:Stocks.FetchQuotes
+save	app/use_cases/stocks/fetch_quotes.rb	/^    def save$/;"	f	class:Stocks.FetchQuotes
+set_stock	app/controllers/stocks_controller.rb	/^  def set_stock$/;"	f	class:StocksController
+show	app/controllers/stocks_controller.rb	/^  def show$/;"	f	class:StocksController
+to_hash	app/use_cases/stocks/fetch_quotes.rb	/^    def to_hash$/;"	f	class:Stocks.FetchQuotes
+up	db/migrate/20131202011259_setup_hstore.rb	/^  def self.up$/;"	F	class:SetupHstore

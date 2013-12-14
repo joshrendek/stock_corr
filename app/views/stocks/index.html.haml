@@ -1,11 +1,14 @@
 - model_class = Stock
 .page-header
   %h1=t '.title', :default => model_class.model_name.human.pluralize.titleize
+
+= paginate @stocks
+
 %table.table.table-striped
   %thead
     %tr
-      %th= model_class.human_attribute_name(:id)
       %th= model_class.human_attribute_name(:symbol)
+      %th= model_class.human_attribute_name(:name)
       %th= model_class.human_attribute_name(:open)
       %th= model_class.human_attribute_name(:high)
       %th= model_class.human_attribute_name(:low)
@@ -14,11 +17,12 @@
   %tbody
     - @stocks.each do |stock|
       %tr
-        %td= link_to stock.id, stock_path(stock)
-        %td= stock.symbol
+        %td= link_to stock.symbol, stock
+        %td= stock.name
         %td= number_to_currency stock.open
         %td= number_to_currency stock.high || stock.stock_data['days_high']
         %td= number_to_currency stock.low || stock.stock_data['days_low']
         %td= number_to_currency stock.close || stock.stock_data['previous_close']
         %td= number_with_delimiter stock.volume
 
+= paginate @stocks
