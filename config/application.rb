@@ -25,7 +25,7 @@ module StockCorr
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
     config.after_initialize do
-      StockRefresher.new.async.perform
+      # StockRefresher.new.async.perform
     end
   end
 end

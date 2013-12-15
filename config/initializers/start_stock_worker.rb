@@ -1,1 +1,0 @@
-StockRefresher.new.async.perform
